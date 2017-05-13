@@ -1,7 +1,7 @@
 var app = angular.module('profile', ['ngRoute']);
 app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/profile',{
-		templateUrl:'/partials/profile.html',
+		templateUrl:'dist/partials/profile.html',
 		controller:'profileCtrl'
 	}).
 	otherwise({
@@ -10,5 +10,5 @@ app.config(['$routeProvider', function($routeProvider) {
 }]);
 
 app.controller('profileCtrl', ['$scope', function($scope){
-	$scope.title="profile";
+	$scope.title="In";
 }]);
